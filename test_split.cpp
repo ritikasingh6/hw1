@@ -13,5 +13,11 @@ g++ split.cpp test_split.cpp -o test_split
 
 int main(int argc, char* argv[])
 {
+	Node *odds = nullptr;
+	Node *evens = nullptr;
+
+	Node *in = new Node(1, new Node(3, new Node(4, nullptr)));
+
+	split(in, odds, evens);
 
 }
